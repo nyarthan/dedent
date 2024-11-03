@@ -49,6 +49,7 @@
               pkgs.treefmt
               pkgs.rustc
               pkgs.cargo
+              pkgs.clippy
             ];
 
             shellHook = ''

@@ -8,6 +8,8 @@
       ".envrc"
       "Cargo.lock"
       "treefmt.toml"
+      "LICENSE"
+      "tests/trybuild/*.stderr"
     ];
     formatter = {
       "justfile" = {

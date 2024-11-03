@@ -9,8 +9,11 @@ format:
 format-check:
     @treefmt --fail-on-change
 
-run:
-    @cargo run
+lint:
+    @cargo clippy
+
+test:
+    @cargo test
 
 build:
     @cargo build --release

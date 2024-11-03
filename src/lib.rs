@@ -95,7 +95,7 @@ pub fn dedent(input: TokenStream) -> TokenStream {
 
     let result = result.trim_matches('\n');
 
-    let result_str = LitStr::new(&result, input.span());
+    let result_str = LitStr::new(result, input.span());
 
     quote! { #result_str.to_string() }.into()
 }
