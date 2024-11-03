@@ -7,7 +7,7 @@ format:
     treefmt
 
 format-check:
-    @treefmt --fail-on-change
+    treefmt --fail-on-change
 
 lint:
     @cargo clippy
