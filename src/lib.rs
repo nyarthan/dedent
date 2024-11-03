@@ -66,7 +66,7 @@ pub fn dedent(input: TokenStream) -> TokenStream {
 
     let lines: Vec<&str> = input_str.lines().collect();
     if lines.is_empty() {
-        return quote! { String::new() }.into();
+        return quote! { "" }.into();
     }
 
     let min_indent = lines
@@ -97,5 +97,5 @@ pub fn dedent(input: TokenStream) -> TokenStream {
 
     let result_str = LitStr::new(result, input.span());
 
-    quote! { #result_str.to_string() }.into()
+    quote! { #result_str }.into()
 }

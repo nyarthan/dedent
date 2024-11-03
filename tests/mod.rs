@@ -47,3 +47,10 @@ fn empty_string() {
 
     assert_eq!(str, "");
 }
+
+#[test]
+fn produces_str_reference() {
+    let str: &str = dedent!("");
+
+    assert_eq!(str, "");
+}
